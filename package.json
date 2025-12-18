@@ -36,17 +36,11 @@
     "@strapi/icons": "^2.0.2",
     "prop-types": "^15.8.1"
   },
-  "devDependencies": {
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0",
-    "react-router-dom": "^6.0.0",
-    "styled-components": "^6.0.0"
-  },
   "peerDependencies": {
-    "@strapi/strapi": ">=4.4.0 <5.29.0",
+    "@strapi/strapi": ">=4.4.0",
     "react": "^17.0.0 || ^18.0.0",
     "react-dom": "^17.0.0 || ^18.0.0",
-    "react-router-dom": "^5.3.4",
+    "react-router-dom": "^6.0.0 || ^7.0.0",
     "styled-components": "^6.0.0"
   },
   "engines": {
