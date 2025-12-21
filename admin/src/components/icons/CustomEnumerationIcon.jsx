@@ -5,8 +5,8 @@
  */
 
 import React from 'react';
-import { Puzzle } from '@strapi/icons';
+import { Cube } from '@strapi/icons';
 
-const CustomEnumerationIcon = () => <Puzzle />;
+const CustomEnumerationIcon = () => <Cube />;
 
 export default CustomEnumerationIcon;
