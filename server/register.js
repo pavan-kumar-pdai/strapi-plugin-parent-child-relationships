@@ -1,16 +1,23 @@
 "use strict";
 
-const plugin = require("../admin/src/pluginId");
-
 module.exports = ({ strapi }) => {
   strapi.customFields.register({
     name: "relation",
-    plugin,
+    plugin: "parent-child-relationships",
     type: "json",
+    inputSize: {
+      default: 6,
+      isResizable: true,
+    },
   });
+
   strapi.customFields.register({
     name: "dynamic-root",
-    plugin,
+    plugin: "parent-child-relationships",
     type: "json",
+    inputSize: {
+      default: 6,
+      isResizable: true,
+    },
   });
 };
