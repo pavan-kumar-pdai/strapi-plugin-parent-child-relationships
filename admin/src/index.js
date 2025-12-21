@@ -1,4 +1,3 @@
-import { prefixPluginTranslations } from "@strapi/strapi/admin";
 import pluginPkg from "../../package.json";
 import pluginId from "./pluginId";
 import Initializer from "./components/Initializer";
@@ -29,7 +28,7 @@ export default {
         )
           .then(({ default: data }) => {
             return {
-              data: prefixPluginTranslations(data, pluginId),
+              data,
               locale,
             };
           })

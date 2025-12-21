@@ -5,8 +5,8 @@
  */
 
 import React from 'react';
-import { Relation } from '@strapi/icons';
+import { Link } from '@strapi/icons';
 
-const CustomRelationIcon = () => <Relation />;
+const CustomRelationIcon = () => <Link />;
 
 export default CustomRelationIcon;
