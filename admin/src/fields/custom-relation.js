@@ -7,7 +7,7 @@ const FIELD_NAME = "relation";
 
 export default {
   name: FIELD_NAME,
-  pluginId: pluginId,
+  plugin: pluginId,
   type: "json",
   icon: Icon,
   components: {
