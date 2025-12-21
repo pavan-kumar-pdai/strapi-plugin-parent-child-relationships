@@ -1,6 +1,6 @@
 import { useMemo } from 'react';
 
-import { useCMEditViewDataManager } from '@strapi/helper-plugin';
+import { useCMEditViewDataManager } from '@strapi/strapi/admin';
 import get from 'lodash/get';
 import { useRouteMatch } from 'react-router-dom';
 

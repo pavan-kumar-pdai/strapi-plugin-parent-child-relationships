@@ -6,7 +6,7 @@ import { useCMEditViewDataManager } from "@strapi/helper-plugin";
 
 import utils from "./utils";
 
-export default function CustomEnumeration(props) {
+const CustomEnumeration = React.forwardRef(function CustomEnumeration(props, ref) {
   const viewData = useCMEditViewDataManager();
 
   const [initialValue, setInitialValue] = useState();
@@ -32,7 +32,6 @@ export default function CustomEnumeration(props) {
 
     relations.forEach(({ relationName }) => {
       const relation = initialData[relationName];
-
       if (relation?.length) {
         setInitialValue(relationName);
       }
@@ -63,6 +62,7 @@ export default function CustomEnumeration(props) {
 
   return (
     <SingleSelect
+      ref={ref}
       disabled={disabled}
       error={error}
       label={intlLabel.defaultMessage}
@@ -80,8 +80,10 @@ export default function CustomEnumeration(props) {
       })}
     </SingleSelect>
   );
-}
+});
 
 CustomEnumeration.defaultProps = {
   value: "null",
 };
+
+export default CustomEnumeration;

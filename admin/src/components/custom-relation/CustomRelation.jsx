@@ -9,7 +9,7 @@ import { RelationInputDataManager } from "../RelationInputDataManager/RelationIn
 
 import utils from "./utils";
 
-export default function CustomRelation(props) {
+const CustomRelation = React.forwardRef(function CustomRelation(props, ref) {
   const viewData = useCMEditViewDataManager();
   const { get } = useFetchClient();
 
@@ -30,9 +30,7 @@ export default function CustomRelation(props) {
 
       if (relation.params) {
         const { db_columns, statics } = relation.params;
-
         const params = { ...db_columns, ...statics };
-
         if (Object.keys(params).length) {
           value = { ...value, params };
         }
@@ -63,10 +61,13 @@ export default function CustomRelation(props) {
     <RelationInputDataManager
       {...dataManagerProps}
       onComboboxChange={onComboboxChange}
+      ref={ref}
     />
   );
-}
+});
 
 CustomRelation.defaultProps = {
   value: "null",
 };
+
+export default CustomRelation;

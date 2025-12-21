@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 
-import { useCallbackRef, useFetchClient } from "@strapi/helper-plugin";
+import { useCallbackRef } from "@strapi/design-system";
+import { useFetchClient } from "@strapi/strapi/admin";
 import { useInfiniteQuery } from "react-query";
 
 import { normalizeRelations } from "../../components/RelationInputDataManager/utils";
