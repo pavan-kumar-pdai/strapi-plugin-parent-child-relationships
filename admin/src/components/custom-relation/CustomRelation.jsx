@@ -1,9 +1,6 @@
 import React from "react";
 
-import {
-  useCMEditViewDataManager,
-  useFetchClient,
-} from "@strapi/helper-plugin";
+import { useCMEditViewDataManager, useFetchClient } from "@strapi/strapi/admin";
 
 import { RelationInputDataManager } from "../RelationInputDataManager/RelationInputDataManager";
 

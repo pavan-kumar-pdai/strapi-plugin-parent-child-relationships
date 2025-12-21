@@ -1,6 +1,6 @@
 import React, { memo, useState } from "react";
 
-import { useCMEditViewDataManager } from "@strapi/helper-plugin";
+import { useCMEditViewDataManager } from "@strapi/strapi/admin";
 
 import get from "lodash/get";
 import pick from "lodash/pick";

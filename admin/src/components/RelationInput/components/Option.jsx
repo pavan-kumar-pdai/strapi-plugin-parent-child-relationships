@@ -1,7 +1,6 @@
 import React from 'react';
 
-import { Flex, Typography, ComboboxOption } from '@strapi/design-system';
-import { pxToRem } from '@strapi/helper-plugin';
+import { Flex, Typography, ComboboxOption, pxToRem } from '@strapi/design-system';
 import PropTypes from 'prop-types';
 import { useIntl } from 'react-intl';
 import styled from 'styled-components';
