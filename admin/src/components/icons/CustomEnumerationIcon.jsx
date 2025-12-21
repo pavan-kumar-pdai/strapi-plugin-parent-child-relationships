@@ -5,8 +5,8 @@
  */
 
 import React from 'react';
-import { Cube } from '@strapi/icons';
+import { CaretDown } from '@strapi/icons';
 
-const CustomEnumerationIcon = () => <Cube />;
+const CustomEnumerationIcon = () => <CaretDown />;
 
 export default CustomEnumerationIcon;
